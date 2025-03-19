@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 80px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .mike {
+            float: left;
+            width: 150px;
+            height: 150px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo4.jpg" class="mike">
+        <h1>Photo Gallery</h1>
+    </header>
+
+  
+    <nav>
+        <a href="ABOUT US.html">ABOUT US</a>
+        <a href="EVENTS.html">EVENTS</a>
+        <a href="CONTACTS.html">CONTACT</a>
+        <a href="PHOTOS.html">PHOTOS</a>
+    </nav>
+
+
+    
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="math1.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="math2.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="neg4.jpg" alt="Gallery Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="neg2.jpg" alt="Gallery Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="neg3.jpg" alt="Gallery Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="neg5.webp" alt="Gallery Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="neg1.jpg" alt="Gallery Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="neg6.avif" alt="Gallery Image 8">
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Negros Occidental High School. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

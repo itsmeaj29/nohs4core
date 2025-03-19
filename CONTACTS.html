@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTOS</title>
+    <style>
+        body {
+            font-family: Arial, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info h2 {
+            color: #333;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+        }
+
+        .developer-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .developer-card {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+
+        .developer-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .developer-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .developer-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .developer-section {
+                justify-content: center;
+            }
+
+            .developer-card {
+                width: 150px;
+                padding: 15px;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            header img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo4.jpg" alt="NOHS Logo"> 
+        <h1>CONTACT</h1>
+    </header>
+
+    <nav>
+        <a href="ABOUT US.html">ABOUT US</a>
+        <a href="EVENTS.html">EVENTS</a>
+        <a href="CONTACTS.html">CONTACT</a>
+        <a href="PHOTOS.html">PHOTOS</a>
+    </nav>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.9332964656496!2d122.94433637565656!3d10.
+    662285631000879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aed1caaa99f51f%3A0xfe24870ab9efec86!2sNegros
+    %20Occidental%20High%20School!5e0!3m2!1sen!2sph!4v1742024954930!5m2!1sen!2sph" width="1500" height="450" style="border:0;" 
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions, feel free to reach out to us using the following contact details:</p>
+            <p><strong>Email:</strong> negrosoccidentalhighschool@.edu</p>
+            <p><strong>Phone:</strong> (034) 434-6578 / 433-9377</p>
+            <p><strong>Address:</strong> Corner Araneta-Hernaez Streets, Bacolod City</p>
+        </div>
+        
+        <br>
+        <br>
+
+        <h2 style="text-align: center; margin-bottom: 20px;">DEVELOPERS:></h2>
+
+
+        <div class="developer-section">
+            <div class="developer-card">
+                <img src="OCTAVIO.jpg" alt="Developer 1">
+                <h3>OCTAVIO, ANTONETTE</h3>
+            </div>
+            <div class="developer-card">
+                <img src="AJ.jpg" alt="Developer 2">
+                <h3>ARNOLD Jr., MORDICE</h3>
+            </div>
+            <div class="developer-card">
+                <img src="MALAGA.JPG" alt="Developer 3">
+                <h3>MALAGA, KAMRAINE</h3>
+            </div>
+            <div class="developer-card">
+                <img src="MOLINA.jpg" alt="Developer 4">
+                <h3>MOLINA, MARK LAWRENCE</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Negros Occidental High School. All Rights Reserved.
+    </footer>
+</body>
+</html>
